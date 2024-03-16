@@ -69,15 +69,6 @@
     
   </svg>
   <img id='couple' src={dancing} alt="dancing avocados"/>
-
-  <!-- SVG for BG -->
-    <svg id="svgContainer3" width="400" height="100" xmlns="http://www.w3.org/2000/svg">
-    <!-- Create a rectangle -->
-    <rect width="200" height="50" x="1" y="25" fill="none" stroke=none stroke-width="2" />
-
-    <!-- Add text inside the rectangle -->
-    <text x="100" y="55" text-anchor="middle" alignment-baseline="middle" font-family="Arial" font-size="20" fill="black"> </text>
-    </svg>
 </main>
 
 <style>
@@ -95,13 +86,7 @@
             font-size: 18px; /* Increase font size */
         line-height: 1.5; /* Double-spaced text */
   }
-  main {
-    height: 100%;
-    width: 100%;
-    background-color: beige;
-    margin: 0;
-    padding: 0;
-  }
+
   img {
     width: 50px;
     mix-blend-mode: multiply;
@@ -124,9 +109,5 @@
   polygon {
     fill: None;
     stroke: black;
-  }
-  #svgContainer3 {
-  margin-left: 510px; /* Adjust the value as needed */
-  margin-top: 140px;
   }
 </style>

@@ -23,14 +23,12 @@
 
     />
     <img
-      id="B"
       src={Arrow}
       class = "image2"
     />
     <img
-      id="B"
       src={Arrow}
-      class = "image3"
+      class = "image2"
     />
 
 
@@ -94,15 +92,6 @@
       <rect x="175" y="70" width="510" height="215" fill="none" stroke="black" stroke-width="2" />
     </svg>
 
-    <!-- SVG for BG -->
-    <svg id="svgContainer3" width="400" height="100" xmlns="http://www.w3.org/2000/svg">
-    <!-- Create a rectangle -->
-    <rect width="200" height="50" x="1" y="25" fill=none stroke=none stroke-width="2" />
-
-    <!-- Add text inside the rectangle -->
-    <text x="100" y="55" text-anchor="middle" alignment-baseline="middle" font-family="Arial" font-size="20" fill="black"> </text>
-    </svg>
-
     <!-- SVG for Label -->
     <svg id="svgContainer2" width="300" height="100" xmlns="http://www.w3.org/2000/svg">
     <!-- Create a rectangle -->
@@ -133,11 +122,7 @@
             font-size: 18px; /* Increase font size */
         line-height: 1.5; /* Double-spaced text */
   }
-  main {
-    background-color: beige;
-    margin: 0;
-    padding: 0;
-  }
+
   .image {
     margin-right: 10px; /* Add right margin to create space between images */
     margin-left: 180px;
@@ -146,21 +131,12 @@
   .image2 {
     margin-right: 100px; /* Add right margin to create space between images */
     margin-left: 1px;
-    display: inline-block;
-  }
-  .image3 {
-    margin-right: 100px; /* Add right margin to create space between images */
-    margin-left: 450px;
+    width: 100px;
     display: inline-block;
   }
   #A {
-    width: 300px; /* Set the width to the desired smaller size */
+    width: 100px; /* Set the width to the desired smaller size */
     height: auto; /* Maintain aspect ratio */
-  }
-  #B {
-    width: 200px; /* Set the width to the desired smaller size */
-    height: auto; /* Maintain aspect ratio */
-    margin-bottom:  150px;
   }
   .greenblack {
     fill: #6cb4ee;
@@ -170,8 +146,7 @@
 
 #svgContainer {
   display: inline-block;
-  margin-left: 530px; /* Adjust the value as needed */
-  margin-top: -375px;
+  left: 5%;
  
 }
 #svgContainer2 {
@@ -180,10 +155,6 @@
   left: 1480px; /* Adjust the horizontal position */
   top: 305px; /* Adjust the vertical position */
 
-}
-#svgContainer3 {
-  margin-left: 450px; /* Adjust the value as needed */
-  margin-top: 155px;
 }
 circle {
     fill: None;

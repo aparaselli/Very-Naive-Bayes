@@ -100,7 +100,6 @@
     height: 5px;
     background-color: #ddd;
     position: fixed;
-    top: 820px;
     left: 50%;
     transform: translateX(-50%);
     border-radius: 5px;

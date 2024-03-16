@@ -200,13 +200,6 @@
         font-size: 18px; /* Increase font size */
         line-height: 1.5; /* Double-spaced text */
   }
-  main {
-    height: 100%;
-    width: 100%;
-    background-color: beige;
-    margin: 0;
-    padding: 0;
-  }
   .circle {
     fill: #d8dadc;
     stroke: black;

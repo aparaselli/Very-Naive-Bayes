@@ -106,6 +106,19 @@
       text23.setAttribute("font-family", "Arial");
       text23.textContent = "P(unripe | green-black) ∝ 8/50";
       svg2.appendChild(text23);
+
+      const text24 = document.createElementNS(
+        "http://www.w3.org/2000/svg",
+        "text",
+      );
+      text24.setAttribute("x", "690");
+      text24.setAttribute("y", "260");
+      text24.setAttribute("fill", "purple");
+      text24.setAttribute("font-size", "25");
+      text24.setAttribute("font-weight", "bold");
+      text24.setAttribute("font-family", "Arial");
+      text24.textContent = "AVI IS UNRIPE";
+      svg2.appendChild(text24);
     }, 2000);
   });
 </script>
@@ -114,14 +127,13 @@
   <h1>Classifying an Avocado</h1>
   <p>
     Avi <span><img src={Icon} alt="download icon"/></span> is <span id="extra">green-black</span>.  We'll
-    highlight all the green-black avocados in our bag in blue. Lets compare the probability that Avi is ripe
-    with the probability that Avi is unripe. By applying the Bayes equation, we focus on the numerators of P(ripe | green-black) 
-    and P(unripe | green-black) since their denominators, P(green-black), are the same. 
-    This allows us to make our comparison using proportionality (∝) rather than equality (=).
-    Which means that P(ripe/unripe | green-black) ∝ P(ripe/unripe) * P(green-black | ripe/unripe).
-  </p>
+    highlight all the green-black avocados in our bag in blue. Let's compare the probability that Avi is ripe
+    with the probability that Avi is unripe. <span id="note">NOTE! we focus on the numerators of P(ripe | green-black) 
+      and P(unripe | green-black) since their denominators are the same. This allows us to make our comparison using proportionality (∝) rather than equality (=).</span>
+    </p>
+    
 
-  <svg width="1750" height="450">
+  <svg width="1400" height="400">
     <g id="ripe">
       <text class="label" x="250" y="50">P(ripe) = 24 / 50</text>
       <text x="40" y="24.2" transform="rotate(270, 40, 120) scale(2,20)">}</text
@@ -185,26 +197,9 @@
     <rect x="190" y="300" width="40" height="10" fill="#6cb4ee" />
     <text x="240" y="310" font-family="Arial">Green-Black</text>
   </svg>
-
-  <!-- SVG for BG -->
-    <svg id="svgContainer3" width="400" height="100" xmlns="http://www.w3.org/2000/svg">
-    <!-- Create a rectangle -->
-    <rect width="200" height="50" x="1" y="25" fill=none stroke=none stroke-width="2" />
-
-    <!-- Add text inside the rectangle -->
-    <text x="100" y="55" text-anchor="middle" alignment-baseline="middle" font-family="Arial" font-size="20" fill="black"> </text>
-    </svg>
-
-        <!-- SVG for Label -->
-    <svg id="svgContainer2" width="1000" height="100" xmlns="http://www.w3.org/2000/svg">
-
-    <!-- Add text inside the rectangle -->
-    <text x="200" y="55" text-anchor="middle" alignment-baseline="middle" font-family="Arial" font-size="20" stroke="red">Avi is likely unripe :(</text>
-    </svg>
 </main>
 
 <style>
-  /* Style the SVG circle elements */
   h1 {
     margin-left: 188px;
     padding-top: 10px;
@@ -222,13 +217,6 @@
     width: 50px;
     mix-blend-mode: multiply;
   }
-  main {
-    height: 100%;
-    width: 100%;
-    background-color: beige;
-    margin: 0;
-    padding: 0;
-  }
   .label {
     font-size: 18px;
     font-family: Arial;
@@ -243,13 +231,13 @@
   #extra {
     font-weight: bold;
   }
+  #note {
+    font-size: 10pt;
+    color: rgb(103, 101, 101);
+  }
   polygon {
     fill: None;
     stroke: black;
-  }
-  #svgContainer3 {
-  margin-left: 40px; /* Adjust the value as needed */
-  margin-top: 113px;
   }
 
   @keyframes fadeIn {
@@ -259,13 +247,5 @@
   to {
     opacity: 1;
   }
-}
-  #svgContainer2 {
-  position: absolute;
-  left: 580px; /* Adjust the horizontal position */
-  top: 505px; /* Adjust the vertical position */
-    opacity: 0; /* Start with opacity 0 */
-  animation: fadeIn 3s ease-in-out forwards;
-  animation-delay: 2s;
 }
 </style>

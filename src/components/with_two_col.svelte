@@ -72,11 +72,25 @@
       text15.textContent = "P(ripe | green-black, soft) ∝ 2/50";
       svg1.appendChild(text15);
 
+      const text16 = document.createElementNS(
+        "http://www.w3.org/2000/svg",
+        "text",
+      );
+      text16.setAttribute("x", "500");
+      text16.setAttribute("y", "290");
+      text16.setAttribute("fill", "purple");
+      text24.setAttribute("font-size", "25");
+      text24.setAttribute("font-weight", "bold");
+      text16.setAttribute("font-family", "Arial");
+      text16.textContent = "AVI IS RIPE";
+      svg1.appendChild(text16);
+
       const svg2 = document.getElementById("unripe");
       const text2 = document.createElementNS(
         "http://www.w3.org/2000/svg",
         "text",
       );
+      text2.setAttribute('style', 'white-space: pre;');
       text2.setAttribute("x", "690");
       text2.setAttribute("y", "100");
       text2.setAttribute("fill", "green");
@@ -88,6 +102,7 @@
         "http://www.w3.org/2000/svg",
         "text",
       );
+      text21.setAttribute('style', 'white-space: pre;');
       text21.setAttribute("x", "690");
       text21.setAttribute("y", "150");
       text21.setAttribute("fill", "green");
@@ -99,6 +114,7 @@
         "http://www.w3.org/2000/svg",
         "text",
       );
+      text22.setAttribute('style', 'white-space: pre;');
       text22.setAttribute("x", "690");
       text22.setAttribute("y", "200");
       text22.setAttribute("fill", "green");
@@ -110,6 +126,7 @@
         "http://www.w3.org/2000/svg",
         "text",
       );
+      text23.setAttribute('style', 'white-space: pre;');
       text23.setAttribute("x", "690");
       text23.setAttribute("y", "230");
       text23.setAttribute("fill", "green");
@@ -121,6 +138,7 @@
         "http://www.w3.org/2000/svg",
         "text",
       );
+      text24.setAttribute('style', 'white-space: pre;');
       text24.setAttribute("x", "690");
       text24.setAttribute("y", "280");
       text24.setAttribute("fill", "red");
@@ -142,7 +160,7 @@
     
   </p>
 
-  <svg width="1900" height="450">
+  <svg width="1400" height="400">
     <g id="ripe">
       <text class="label" x="250" y="50">P(ripe) = 24 / 50</text>
       <text x="40" y="24.2" transform="rotate(270, 40, 120) scale(2,20)">}</text
@@ -210,22 +228,6 @@
     <rect x="190" y="340" width="40" height="10" fill="#6deb86" />
     <text x="240" y="350" font-family="Arial">Green-Black & Soft</text>
   </svg>
-
-  <!-- SVG for BG -->
-    <svg id="svgContainer3" width="400" height="100" xmlns="http://www.w3.org/2000/svg">
-    <!-- Create a rectangle -->
-    <rect width="200" height="50" x="1" y="25" fill=none stroke=none stroke-width="2" />
-
-    <!-- Add text inside the rectangle -->
-    <text x="100" y="55" text-anchor="middle" alignment-baseline="middle" font-family="Arial" font-size="20" fill="black"> </text>
-    </svg>
-
-          <!-- SVG for Label -->
-    <svg id="svgContainer2" width="1000" height="100" xmlns="http://www.w3.org/2000/svg">
-
-    <!-- Add text inside the rectangle -->
-    <text x="200" y="55" text-anchor="middle" alignment-baseline="middle" font-family="Arial" font-size="20" stroke="red">Avi is likely ripe :D</text>
-    </svg>
 </main>
 
 <style>
@@ -250,13 +252,7 @@
     width: 50px;
     mix-blend-mode: multiply;
   }
-  main {
-    height: 100%;
-    width: 100%;
-    background-color: beige;
-    margin: 0;
-    padding: 0;
-  }
+
   .label {
     font-size: 18px;
     font-family: Arial;
@@ -279,10 +275,6 @@
     fill: None;
     stroke: black;
   }
-  #svgContainer3 {
-  margin-left: 40px; /* Adjust the value as needed */
-  margin-top: 140px;
-  }
 
     @keyframes fadeIn {
   from {
@@ -291,13 +283,5 @@
   to {
     opacity: 1;
   }
-}
-  #svgContainer2 {
-  position: absolute;
-  left: 580px; /* Adjust the horizontal position */
-  top: 505px; /* Adjust the vertical position */
-    opacity: 0; /* Start with opacity 0 */
-  animation: fadeIn 3s ease-in-out forwards;
-  animation-delay: 2s;
 }
 </style>

@@ -22,7 +22,7 @@
 
 
 
-   <svg id=svgContainer width="1900" height="450">
+   <svg id=svgContainer width="1400" height="450">
     <g id="cogContainer">
     <image href={Cog} width="100" x="650" y="10" class="rotate"/>
     </g>
@@ -83,14 +83,6 @@
     </g>
     <rect x="175" y="70" width="510" height="245" fill="none" stroke="black" stroke-width="2" />
   </svg>
-    <!-- SVG for BG -->
-    <svg id="svgContainer3" width="400" height="100" xmlns="http://www.w3.org/2000/svg">
-    <!-- Create a rectangle -->
-    <rect width="200" height="50" x="1" y="25" fill=none stroke=none stroke-width="2" />
-
-    <!-- Add text inside the rectangle -->
-    <text x="100" y="55" text-anchor="middle" alignment-baseline="middle" font-family="Arial" font-size="20" fill="black"> </text>
-    </svg>
 
     <img
       id="A"
@@ -167,15 +159,13 @@
 
 
      <!-- SVG for Label -->
-    <svg id="svgContainer2" width="400" height="100" xmlns="http://www.w3.org/2000/svg" class=fade-in2>
+    <svg id="svgContainer2" width="200" height="100" xmlns="http://www.w3.org/2000/svg" class=fade-in2>
     <!-- Create a rectangle -->
     <rect width="200" height="50" x="1" y="25" fill="red" stroke=none stroke-width="2" />
 
     <!-- Add text inside the rectangle -->
     <text x="100" y="42" text-anchor="middle" alignment-baseline="middle" font-family="Arial" font-size="20" fill="black">Weight1 = 1.2<tspan x="100" dy="25">Weight2 = 0.8</tspan></text>
     </svg>
-
-
 </main>
 
 <style>
@@ -193,11 +183,6 @@
         font-size: 18px; /* Increase font size */
         line-height: 1.5; /* Double-spaced text */
   }
-  main {
-    background-color: beige;
-    margin: 0;
-    padding: 0;
-  }
   .image {
     position: absolute; /* Position the element absolutely */
     left: 780px; /* Set the left position */
@@ -214,25 +199,6 @@
         opacity: 1; /* End with opacity 1 */
     }
 }
-  .image2 {
-    margin-right: 100px; /* Add right margin to create space between images */
-    margin-left: 1px;
-    display: inline-block;
-  }
-  .image3 {
-    margin-right: 100px; /* Add right margin to create space between images */
-    margin-left: 450px;
-    display: inline-block;
-  }
-  #A {
-    width: 300px; /* Set the width to the desired smaller size */
-    height: auto; /* Maintain aspect ratio */
-  }
-  #B {
-    width: 200px; /* Set the width to the desired smaller size */
-    height: auto; /* Maintain aspect ratio */
-    margin-bottom:  150px;
-  }
   .greenblack {
     fill: #6cb4ee;
   }
@@ -249,10 +215,6 @@
         opacity: 1; /* End with opacity 1 */
     }
 }
-  .label {
-    font-size: 18px;
-    font-family: Arial;
-  }
 
 #cogContainer {
   transform-origin: center;
@@ -264,26 +226,18 @@
 
 #svgContainer {
   display: inline-block;
-  margin-left: 0px; /* Adjust the value as needed */
-  margin-top: -15px;
  
 }
 #svgContainer2 {
   display: inline-block;
-  position: absolute;
+  position: relative;
   left: 800px; /* Adjust the horizontal position */
   top: 323px; /* Adjust the vertical position */
 
 }
-#svgContainer3 {
-  margin-left: 450px; /* Adjust the value as needed */
-  margin-top: 171px;
-}
 
 #svgContainer4 {
-    position: absolute; /* Position the element absolutely */
-    left: 970px; /* Set the left position */
-    bottom: 277px; /* Set the bottom position */
+    position: relative; /* Position the element absolutely */
 }
 
 circle {

@@ -12,15 +12,6 @@
     <circle cx="600" cy="250" r="200">
     <title>Probability space for event B</title>
     </circle>
-  </svg>
-  <!-- SVG for BG -->
-    <svg id="svgContainer3" width="400" height="100" xmlns="http://www.w3.org/2000/svg">
-    <!-- Create a rectangle -->
-    <rect width="200" height="50" x="1" y="25" fill="none" stroke=none stroke-width="2" />
-
-    <!-- Add text inside the rectangle -->
-    <text x="100" y="55" text-anchor="middle" alignment-baseline="middle" font-family="Arial" font-size="20" fill="black"> </text>
-    </svg>
   
 </main>
 
@@ -38,19 +29,10 @@
         font-size: 18px; /* Increase font size */
         line-height: 1.5; /* Double-spaced text */
   }
-  main {
-    background-color: beige;
-    margin: 0;
-    padding: 0;
-  }
+
   circle {
     fill: #90EE90;
     opacity: 0.8;
-  }
-
-  #svgContainer3 {
-  margin-left: 510px; /* Adjust the value as needed */
-  margin-top: 160px;
   }
 </style>
 

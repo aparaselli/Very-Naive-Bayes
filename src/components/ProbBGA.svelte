@@ -6,7 +6,7 @@
 <main>
   <h1>P(B|A): Probability of B given A</h1>
 
-  <p>Now that we know A and B have an overlapping section, another thing we may ask is that if we observed A what is the chance that we also observed B.
+  <p>Now that we know A and B have an overlapping section, this can also be understood as the probability of event B happening if event A has happened.
   This is called conditional probability and we define the probability of B given A as P(A ∩ B)&divideP(A).
 
   </p>
@@ -19,15 +19,6 @@
       <title>Probability of B given A</title>
     </path>
   </svg>
-
-  <!-- SVG for BG -->
-    <svg id="svgContainer3" width="400" height="100" xmlns="http://www.w3.org/2000/svg">
-    <!-- Create a rectangle -->
-    <rect width="200" height="50" x="1" y="25" fill="none" stroke=none stroke-width="2" />
-
-    <!-- Add text inside the rectangle -->
-    <text x="100" y="55" text-anchor="middle" alignment-baseline="middle" font-family="Arial" font-size="20" fill="black"> </text>
-    </svg>
 </main>
 
 <style>
@@ -44,18 +35,9 @@
           font-size: 18px; /* Increase font size */
         line-height: 1.5; /* Double-spaced text */
   }
-  main {
-    background-color: beige;
-    margin: 0;
-    padding: 0;
-  }
+
   circle.blue {
     fill: #ADD8E6;
     opacity: 0.4;
   }
-  #svgContainer3 {
-  margin-left: 510px; /* Adjust the value as needed */
-  margin-top: 133px;
-  }
-
 </style>

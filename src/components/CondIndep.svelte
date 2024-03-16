@@ -1,4 +1,3 @@
-
 <script>
   // You can define any additional logic here if needed
   import heads from "$lib/assets/coin_heads.png";
@@ -9,16 +8,25 @@
   <h1>But what if we wanted to predict on more features?</h1>
 
   <p>
-    
-Let say we also knew the softness of Avi! Now, when predicting ripeness using color and softness, we narrow our search to avocados with matching color and softness. 
- However, this approach poses a problem as it ignores variations within our dataset. 
- For example in this case if we know avi is green-black and soft, we would only look at the green circles,
-  which would force us to ignore all the blue and yellow points. To ensure we extract value from a broader 
-range of avocados (and lower computations), we make the simplifying assumption that our features are independent given ripeness. In essence, once we know an avocado's 
-ripeness, color no longer affects softness and vice versa. This principle is known as conditional independence.
+    Let say we also knew the softness of Avi! Now, when predicting ripeness
+    using color and softness, we narrow our search to avocados with matching
+    color and softness. However, this approach poses a problem as it ignores
+    variations in the bag of avocados (dataset).
+  </p>
+  <p>
+    If we know Avi is green-black AND soft, we would
+    only look at the green circles, which would force us to ignore all the blue
+    and yellow points. To ensure we extract value from a broader range of
+    avocados (and lower computations), we make the simplifying assumption that
+    our features are independent given ripeness.
+  </p>
+  <p>
+    In essence, once we know an avocado's ripeness, color no longer affects
+    softness and vice versa. This principle is known as conditional
+    independence.
   </p>
 
-  <svg width="1900" height="450">
+  <svg width="1000" height="360">
     <g id="ripe">
       <text class="label" x="250" y="50">P(ripe) = 24 / 50</text>
       <text x="40" y="24.2" transform="rotate(270, 40, 120) scale(2,20)">}</text
@@ -86,22 +94,9 @@ ripeness, color no longer affects softness and vice versa. This principle is kno
     <rect x="190" y="340" width="40" height="10" fill="#6deb86" />
     <text x="240" y="350" font-family="Arial">Green-Black & Soft</text>
   </svg>
-
-    <!-- SVG for BG -->
-    <svg id="svgContainer3" width="400" height="100" xmlns="http://www.w3.org/2000/svg">
-    <!-- Create a rectangle -->
-    <rect width="200" height="50" x="1" y="25" fill=none stroke=none stroke-width="2" />
-
-    <!-- Add text inside the rectangle -->
-    <text x="100" y="55" text-anchor="middle" alignment-baseline="middle" font-family="Arial" font-size="20" fill="black"> </text>
-    </svg>
 </main>
 
 <style>
-#svgContainer3 {
-  margin-left: 450px; /* Adjust the value as needed */
-  margin-top: 129px;
-}
   h1 {
     padding-left: 188px;
     padding-top: 10px;
@@ -109,31 +104,15 @@ ripeness, color no longer affects softness and vice versa. This principle is kno
     font-family: Arial, Helvetica, sans-serif;
   }
   p {
+    margin-top: 0.5%;
+    margin-bottom: 0%;
     padding-left: 188px;
     padding-right: 188px;
     font-family: Arial, Helvetica, sans-serif;
-        font-size: 18px; /* Increase font size */
-        line-height: 1.5; /* Double-spaced text */
+    font-size: 18px; /* Increase font size */
+    line-height: 1.5; /* Double-spaced text */
   }
-  main {
-    background-color: beige;
-    margin: 0;
-    padding: 0;
-  }
-  circle {
-    fill: #add8e6;
-    opacity: 0.8;
-  }
-  .image {
-    margin-right: 100px; /* Add right margin to create space between images */
-    margin-left: 100px;
-  }
-  #A {
-    width: 400px; /* Set the width to the desired smaller size */
-    height: auto; /* Maintain aspect ratio */
-  }
-
-    .soft {
+  .soft {
     fill: #f0e68c;
   }
   .greenblack-soft {
@@ -142,19 +121,18 @@ ripeness, color no longer affects softness and vice versa. This principle is kno
   .greenblack {
     fill: #6cb4ee;
   }
-    polygon {
+  polygon {
     fill: None;
     stroke: black;
   }
 
-    circle {
+  circle {
     fill: None;
     stroke: black;
   }
 
-    .label {
+  .label {
     font-size: 18px;
     font-family: Arial;
   }
-
 </style>
