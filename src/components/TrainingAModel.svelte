@@ -1,7 +1,6 @@
 <!-- LargeBlueCircle.svelte -->
 <script>
-  import Icon from "$lib/assets/iconNoBG.png";
-  import Arrow from "$lib/assets/arrow.png";
+  import weightedArrow from "$lib/assets/Arrow_W_Weights.png";
   import Cog from "$lib/assets/cog.png";
 
   // You can define any additional logic here if needed
@@ -21,7 +20,7 @@
     fitting to maximize correct predictions on our data.
   </p>
 
-  <svg id="svgContainer" width="1400" height="450">
+  <svg id="svgContainer" width="30%" height="auto"  viewBox="0 0 800 500">
     <g id="cogContainer">
       <image href={Cog} width="100" x="650" y="10" class="rotate" />
     </g>
@@ -90,10 +89,10 @@
     />
   </svg>
 
-  <img alt="arrow" id="arrow" src={Arrow} />
+  <img alt="arrow" id="arrow" src={weightedArrow} />
 
   <!-- Trained model -->
-  <svg id="svgContainer4" width="800" height="450" class="fade-in">
+  <svg id="svgContainer4" width="30%" height="auto" class="fade-in" viewBox="0 0 800 500">
     <rect
       x="175"
       y="70"
@@ -162,38 +161,6 @@
       <polygon points="640, 258 650, 241 660, 258"></polygon>
     </g>
   </svg>
-
-  <!-- SVG for Label -->
-  <svg
-    id="svgContainer2"
-    width="200"
-    height="100"
-    xmlns="http://www.w3.org/2000/svg"
-    class="fade-in2"
-  >
-    <!-- Create a rectangle -->
-    <rect
-      width="200"
-      height="50"
-      x="1"
-      y="25"
-      fill="red"
-      stroke="none"
-      stroke-width="2"
-    />
-
-    <!-- Add text inside the rectangle -->
-    <text
-      x="100"
-      y="42"
-      text-anchor="middle"
-      alignment-baseline="middle"
-      font-family="Arial"
-      font-size="20"
-      fill="black"
-      >Weight1 = 1.2<tspan x="100" dy="25">Weight2 = 0.8</tspan></text
-    >
-  </svg>
 </main>
 
 <style>
@@ -212,7 +179,8 @@
   }
   #arrow {
     position: relative; /* Position the element absolutely */
-    width: 100px;
+    width: 200px;
+    padding-bottom: 8%;
     opacity: 0; /* Initially hide the image */
     animation: fadeInImg 5s forwards; /* Apply the fadeIn animation */
     animation-delay: 2s;
@@ -251,13 +219,12 @@
   }
 
   #svgContainer {
-    display: inline-block;
+    padding-left: 10%;
   }
-  #svgContainer2 {
+  #weight {
     display: inline-block;
     position: relative;
-    left: 800px; /* Adjust the horizontal position */
-    top: 323px; /* Adjust the vertical position */
+
   }
 
   #svgContainer4 {

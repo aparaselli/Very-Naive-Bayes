@@ -128,9 +128,10 @@
   <p>
     Avi <span><img src={Icon} alt="download icon"/></span> is <span id="extra">green-black</span>.  We'll
     highlight all the green-black avocados in our bag in blue. Let's compare the probability that Avi is ripe
-    with the probability that Avi is unripe. <span id="note">NOTE! we focus on the numerators of P(ripe | green-black) 
+    with the probability that Avi is unripe. <span class="note">NOTE! we focus on the numerators of P(ripe | green-black) 
       and P(unripe | green-black) since their denominators are the same. This allows us to make our comparison using proportionality (∝) rather than equality (=).</span>
     </p>
+    <p class="note">!! please stay on this page for at least 3 seconds</p>
     
 
   <svg width="1400" height="400">
@@ -231,7 +232,7 @@
   #extra {
     font-weight: bold;
   }
-  #note {
+  .note {
     font-size: 10pt;
     color: rgb(103, 101, 101);
   }

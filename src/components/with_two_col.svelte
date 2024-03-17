@@ -85,12 +85,12 @@
       svg1.appendChild(text16);
 
       const svg2 = document.getElementById("unripe");
-      console.log('svg2 created')
+      console.log("svg2 created");
       const text2 = document.createElementNS(
         "http://www.w3.org/2000/svg",
         "text",
       );
-      text2.setAttribute('style', 'white-space: pre;');
+      text2.setAttribute("style", "white-space: pre;");
       text2.setAttribute("x", "690");
       text2.setAttribute("y", "100");
       text2.setAttribute("fill", "green");
@@ -102,7 +102,7 @@
         "http://www.w3.org/2000/svg",
         "text",
       );
-      text21.setAttribute('style', 'white-space: pre;');
+      text21.setAttribute("style", "white-space: pre;");
       text21.setAttribute("x", "690");
       text21.setAttribute("y", "150");
       text21.setAttribute("fill", "green");
@@ -114,7 +114,7 @@
         "http://www.w3.org/2000/svg",
         "text",
       );
-      text22.setAttribute('style', 'white-space: pre;');
+      text22.setAttribute("style", "white-space: pre;");
       text22.setAttribute("x", "690");
       text22.setAttribute("y", "200");
       text22.setAttribute("fill", "green");
@@ -126,7 +126,7 @@
         "http://www.w3.org/2000/svg",
         "text",
       );
-      text23.setAttribute('style', 'white-space: pre;');
+      text23.setAttribute("style", "white-space: pre;");
       text23.setAttribute("x", "690");
       text23.setAttribute("y", "230");
       text23.setAttribute("fill", "green");
@@ -138,7 +138,7 @@
         "http://www.w3.org/2000/svg",
         "text",
       );
-      text24.setAttribute('style', 'white-space: pre;');
+      text24.setAttribute("style", "white-space: pre;");
       text24.setAttribute("x", "690");
       text24.setAttribute("y", "280");
       text24.setAttribute("fill", "red");
@@ -152,14 +152,17 @@
 <main>
   <h1>Classifying an Avocado</h1>
   <p>
-    So now that we know Avi <span><img class='avocado' src={Icon} alt="download icon" /></span> is green-black
-    <span id="extra">and soft</span>, lets repredict his ripeness. We'll highlight all the avocados with
-    green-black in our bag of avocados in blue and all the soft ones in yellow.
-    Assuming conditional independence allows us to conclude that P(green-black  ∩ soft | ripe/unripe) ∝ 
-    P(ripe/unripe) * P(green-black | ripe/unripe) * P(soft | ripe/unripe).
-    
+    So now that we know Avi <span
+      ><img class="avocado" src={Icon} alt="download icon" /></span
+    >
+    is green-black
+    <span id="extra">and soft</span>, lets repredict his ripeness. We'll
+    highlight all the avocados with green-black in our bag of avocados in blue
+    and all the soft ones in yellow. Assuming conditional independence allows us
+    to conclude that P(green-black ∩ soft | ripe/unripe) ∝ P(ripe/unripe) *
+    P(green-black | ripe/unripe) * P(soft | ripe/unripe).
   </p>
-
+  <p class="note">!! please stay on this page for at least 3 seconds</p>
   <svg width="1400" height="450">
     <g id="ripe">
       <text class="label" x="250" y="50">P(ripe) = 24 / 50</text>
@@ -242,8 +245,8 @@
     margin-left: 188px;
     margin-right: 188px;
     font-family: Arial, Helvetica, sans-serif;
-          font-size: 18px; /* Increase font size */
-        line-height: 1.5; /* Double-spaced text */
+    font-size: 18px; /* Increase font size */
+    line-height: 1.5; /* Double-spaced text */
   }
   #extra {
     font-weight: bold;
@@ -275,13 +278,16 @@
     fill: None;
     stroke: black;
   }
-
-    @keyframes fadeIn {
-  from {
-    opacity: 0;
+  .note {
+    font-size: 10pt;
+    color: rgb(103, 101, 101);
   }
-  to {
-    opacity: 1;
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
-}
 </style>
