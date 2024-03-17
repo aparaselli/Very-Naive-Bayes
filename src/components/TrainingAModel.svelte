@@ -9,7 +9,7 @@
 </script>
 
 <main>
-  <h1>Creating a Model</h1>
+  <h1>Fitting</h1>
 
   <p>
     Fitting refers to the act of optimizing a model given training data to make the best prediction.

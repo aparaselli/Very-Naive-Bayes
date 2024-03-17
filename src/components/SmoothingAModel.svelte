@@ -6,7 +6,7 @@
 </script>
 
 <main>
-  <h1>Smoothing</h1>
+  <h1>Smoothing a Model</h1>
 
   <p>
     When creating models, data preparation is crucial. When observing our
