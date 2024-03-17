@@ -71,21 +71,21 @@
       text15.setAttribute("font-family", "Arial");
       text15.textContent = "P(ripe | green-black, soft) ∝ 2/50";
       svg1.appendChild(text15);
-
       const text16 = document.createElementNS(
         "http://www.w3.org/2000/svg",
         "text",
       );
       text16.setAttribute("x", "500");
-      text16.setAttribute("y", "290");
+      text16.setAttribute("y", "320");
       text16.setAttribute("fill", "purple");
-      text24.setAttribute("font-size", "25");
-      text24.setAttribute("font-weight", "bold");
+      text16.setAttribute("font-size", "25");
+      text16.setAttribute("font-weight", "bold");
       text16.setAttribute("font-family", "Arial");
       text16.textContent = "AVI IS RIPE";
       svg1.appendChild(text16);
 
       const svg2 = document.getElementById("unripe");
+      console.log('svg2 created')
       const text2 = document.createElementNS(
         "http://www.w3.org/2000/svg",
         "text",
@@ -160,7 +160,7 @@
     
   </p>
 
-  <svg width="1400" height="400">
+  <svg width="1400" height="450">
     <g id="ripe">
       <text class="label" x="250" y="50">P(ripe) = 24 / 50</text>
       <text x="40" y="24.2" transform="rotate(270, 40, 120) scale(2,20)">}</text
