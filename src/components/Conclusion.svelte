@@ -2,7 +2,7 @@
 <script>
   import Icon from "$lib/assets/iconNoBG.png";
   import Arrow from "$lib/assets/arrow.png";
-  import Cog from "$lib/assets/cog.png";
+  import Model from "$lib/assets/trainedmodel.png";
 
   // You can define any additional logic here if needed
 </script>
@@ -14,89 +14,20 @@
     Now that we have a model we can make predictions about Avi and all of
     friends with ease! We hope that through the use of our animations, examples
     and emphasis on visuals to represent data you were able to successfully
-    understand the basics and most importantly, the inuition behind the naive
-    bayes classifier. You now know basic probility rules, the math used to make
+    understand the basics and most importantly, the inuition behind the Naive
+    Bayes classifier. You now know basic probility rules, the math used to make
     a prediction, and the methodology behind creating a naive bayes
     classification model. Using this knowledge your ready to tackle
     classification problems and learn more about the world of machine learning!
   </p>
 
-  <img id="A" src={Icon} class="image2" style="width: 100px; height: auto;" />
-  <img id="A" src={Icon} class="image" style="width: 100px; height: auto;" />
-  <img id="A" src={Icon} class="image" style="width: 100px; height: auto;" />
-
-  <!-- Trained model -->
-  <svg id="svgContainer" width="900" height="450">
-    <rect
-      x="175"
-      y="70"
-      width="510"
-      height="245"
-      fill="pink"
-      stroke="black"
-      stroke-width="2"
-    />
-    <g id="cogContainer">
-      <image href={Cog} width="100" x="650" y="10" />
-      <image href={Cog} width="100" x="105" y="10" />
-    </g>
-    <g id="ripe">
-      <circle cx="200" cy="100" r="10"></circle>
-      <circle cx="200" cy="150" r="10"></circle>
-      <circle cx="200" cy="200" r="10"></circle>
-      <circle cx="200" cy="250" r="10"></circle>
-
-      <circle cx="250" cy="100" r="10"></circle>
-      <circle cx="250" cy="150" r="10"></circle>
-      <circle cx="250" cy="200" r="10"></circle>
-      <circle cx="250" cy="250" r="10"></circle>
-
-      <circle class="soft" cx="300" cy="100" r="10"></circle>
-      <circle class="soft" cx="300" cy="150" r="10"></circle>
-      <circle cx="300" cy="200" r="10"></circle>
-      <circle cx="300" cy="250" r="10"></circle>
-
-      <circle class="soft" cx="350" cy="100" r="10"></circle>
-      <circle class="soft" cx="350" cy="150" r="10"></circle>
-      <circle cx="350" cy="200" r="10"></circle>
-      <circle cx="350" cy="250" r="10"></circle>
-
-      <circle class="greenblack-soft" cx="400" cy="100" r="10"></circle>
-      <circle class="greenblack-soft" cx="400" cy="150" r="10"></circle>
-      <circle class="greenblack" cx="400" cy="200" r="10"></circle>
-      <circle cx="400" cy="250" r="10"></circle>
-
-      <circle class="greenblack-soft" cx="450" cy="100" r="10"></circle>
-      <circle class="greenblack-soft" cx="450" cy="150" r="10"></circle>
-      <circle class="greenblack" cx="450" cy="200" r="10"></circle>
-      <circle cx="450" cy="250" r="10"></circle>
-    </g>
-    <g id="unripe">
-      <polygon class="greenblack" points="490, 108 500, 91 510, 108"></polygon>
-      <polygon class="greenblack" points="490, 158 500, 141 510, 158"></polygon>
-      <polygon class="greenblack" points="490, 208 500, 191 510, 208"></polygon>
-      <polygon class="greenblack" points="490, 258 500, 241 510, 258"></polygon>
-
-      <polygon class="greenblack" points="540, 108 550, 91 560, 108"></polygon>
-      <polygon class="greenblack" points="540, 158 550, 141 560, 158"></polygon>
-      <polygon class="greenblack" points="540, 208 550, 191 560, 208"></polygon>
-      <polygon class="greenblack" points="540, 258 550, 241 560, 258"></polygon>
-      <!-- Smoothed point -->
-      <polygon class="smooth" points="570, 308 580, 291 590, 308"></polygon>
-
-      <polygon points="590, 108 600, 91 610, 108"></polygon>
-      <polygon points="590, 158 600, 141 610, 158"></polygon>
-      <polygon points="590, 208 600, 191 610, 208"></polygon>
-      <polygon points="590, 258 600, 241 610, 258"></polygon>
-
-      <polygon points="640, 108 650, 91 660, 108"></polygon>
-      <polygon points="640, 158 650, 141 660, 158"></polygon>
-      <polygon points="640, 208 650, 191 660, 208"></polygon>
-      <polygon points="640, 258 650, 241 660, 258"></polygon>
-    </g>
-  </svg>
+  <img alt="avocado" id="A" src={Icon} />
+  <img alt="avocado" class="image" src={Icon} />
+  <img alt="avocado" class="image" src={Icon} />
 
   <img id="B" src={Arrow} class="image3" alt="arrow" />
+
+  <img id="model" src={Model} alt="trained model" />
 </main>
 
 <style>
@@ -113,39 +44,27 @@
     font-size: 18px; /* Increase font size */
     line-height: 1.5; /* Double-spaced text */
   }
-  .image {
-    width: 50px; /* Set the width to the desired size */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 10px; /* Add right margin to create space between images */
-    margin-left: 10px;
-    display: inline-block;
+  #A {
+    width: 100px;
+    margin-left: 12%;
+    padding-bottom: 2%;
   }
-
-  .image2 {
-    margin-right: 10px; /* Add right margin to create space between images */
-    margin-left: 185px;
-    display: inline-block;
+  .image {
+    width: 100px;
+   padding-bottom: 2%;
   }
   .image3 {
+    width: 100px;
     display: inline-block;
     position: relative;
-    left: 00px; /* Adjust the horizontal position */
-    top: 100px; /* Adjust the vertical position */
+    margin-bottom: 5%;
+   
   }
 
-  #B {
-    width: 200px; /* Set the width to the desired smaller size */
-    height: auto; /* Maintain aspect ratio */
-    margin-bottom: 150px;
+  #model {
+    padding-top: 2%;
+    width: 35%;
   }
-  .greenblack {
-    fill: #6cb4ee;
-  }
-  .smooth {
-    fill: #f0e68c;
-    stroke: red;
-  }
-
   @keyframes fadeIn {
     from {
       opacity: 0; /* Start with opacity 0 */
@@ -153,40 +72,6 @@
     to {
       opacity: 1; /* End with opacity 1 */
     }
-  }
-
-  #cogContainer {
-    transform-origin: center;
-    border: 2px solid black; /* Add a black border around the container */
-    width: 100px; /* Set the width to match the cog image */
-    height: 100px; /* Set the height to match the cog image */
-    position: relative; /* Ensure proper positioning */
-  }
-
-  #svgContainer {
-    display: inline-block;
-    position: absolute;
-    left: 980px; /* Adjust the horizontal position */
-    top: 195px; /* Adjust the vertical position */
-  }
-
-  circle {
-    fill: None;
-    stroke: black;
-  }
-  .soft {
-    fill: #f0e68c;
-  }
-  .greenblack-soft {
-    fill: #6deb86;
-  }
-  .greenblack {
-    fill: #6cb4ee;
-  }
-
-  polygon {
-    fill: None;
-    stroke: black;
   }
 
   @keyframes rotate {
